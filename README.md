@@ -115,67 +115,7 @@ The answers that read integer 3 from the stream are not accepted.<br>
 </ul>
 <Strong>Solution Link:  <a href="https://github.com/BVARUNTEJA/LeetCode-POD/blob/November-2023/03-11-2023.py">Click Here</a></Strong>
  <br>
- <h2>DAY_2</h2>
-<p>Problem Discription-<a href="https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/description/?envType=daily-question&envId=2023-11-02">Link</a></p>
-<div>
-<p>
-<strong>2265.</strong>.Count Nodes Equal to Average of Subtree
-Given the root of a binary tree, return the number of nodes where the value of the node is equal to the average of the values in its subtree.
-<br>
-Note:
-<br>
-1.The average of n elements is the sum of the n elements divided by n and rounded down to the nearest integer.<br>
-2.A subtree of root is a tree consisting of root and all of its descendants.
-<br>
-<br>
-<strong>Constraints:</strong>
-<p>The number of nodes in the tree is in the range [1, 1000]. </p>
-<p> 0 <= Node.val <= 1000</p>
-</p>
-</div>
-Example 1:
-Input: root = [4,8,5,0,1,null,6]
-<img src="https://assets.leetcode.com/uploads/2022/03/15/image-20220315203925-1.png" >
-Output: 5<br>
-Explanation: <br>
-For the node with value 4: The average of its subtree is (4 + 8 + 5 + 0 + 1 + 6) / 6 = 24 / 6 = 4.<br>
-For the node with value 5: The average of its subtree is (5 + 6) / 2 = 11 / 2 = 5.<br>
-For the node with value 0: The average of its subtree is 0 / 1 = 0.<br>
-For the node with value 1: The average of its subtree is 1 / 1 = 1.<br>
-For the node with value 6: The average of its subtree is 6 / 1 = 6.<br>
-<Strong>Solution Link:  <a href="https://github.com/BVARUNTEJA/LeetCode-POD/blob/November-2023/02-11-2023.py">Click Here</a></Strong>
- <br>
-<h2>DAY_2</h2>
-<p>Problem Discription-<a href="https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/description/?envType=daily-question&envId=2023-11-02">Link</a></p>
-<div>
-<p>
-<strong>2265.</strong>.Count Nodes Equal to Average of Subtree
-Given the root of a binary tree, return the number of nodes where the value of the node is equal to the average of the values in its subtree.
-<br>
-Note:
-<br>
-1.The average of n elements is the sum of the n elements divided by n and rounded down to the nearest integer.<br>
-2.A subtree of root is a tree consisting of root and all of its descendants.
-<br>
-<br>
-<strong>Constraints:</strong>
-<p>The number of nodes in the tree is in the range [1, 1000]. </p>
-<p> 0 <= Node.val <= 1000</p>
-</p>
-</div>
-Example 1:
-Input: root = [4,8,5,0,1,null,6]
-<img src="https://assets.leetcode.com/uploads/2022/03/15/image-20220315203925-1.png" >
-Output: 5<br>
-Explanation: <br>
-For the node with value 4: The average of its subtree is (4 + 8 + 5 + 0 + 1 + 6) / 6 = 24 / 6 = 4.<br>
-For the node with value 5: The average of its subtree is (5 + 6) / 2 = 11 / 2 = 5.<br>
-For the node with value 0: The average of its subtree is 0 / 1 = 0.<br>
-For the node with value 1: The average of its subtree is 1 / 1 = 1.<br>
-For the node with value 6: The average of its subtree is 6 / 1 = 6.<br>
-<Strong>Solution Link:  <a href="https://github.com/BVARUNTEJA/LeetCode-POD/blob/November-2023/02-11-2023.py">Click Here</a></Strong>
- <br>
- 
+
 <h2>DAY_4</h2>
 <p>Problem Discription-<a href="https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/description/">Link</a></p>
 <div>
@@ -201,18 +141,23 @@ Given an integer n and two integer arrays left and right, the positions of the a
 </ul>
 </p>
 </div>
-Example 1:
-Input: n = 4, left = [4,3], right = [0,1] <br>
+<strong>Example 1:</strong> 
+<strong>Input:</strong>  n = 4, left = [4,3], right = [0,1] <br>
 <img src="https://assets.leetcode.com/uploads/2020/06/17/ants.jpg" >
-Output: 4<br>
-Explanation: <br>
+<strong>Output:</strong> 4<br>
+<strong>Explanation:</strong><br>
 In the image above:<br>
 -The ant at index 0 is named A and going to the right.<br>
 -The ant at index 1 is named B and going to the right.<br>
 -The ant at index 3 is named C and going to the left.<br>
 -The ant at index 4 is named D and going to the left.<br>
 The last moment when an ant was on the plank is t = 4 seconds. After that, it falls immediately out of the plank. (i.e., We can say that at t = 4.0000000001, there are no ants on the plank).<br>
-<Strong>Solution Link:  <a href="">Click Here</a></Strong>
+<strong>Example 2:</strong><br>
+<strong>Input:</strong> n = 7, left = [], right = [0,1,2,3,4,5,6,7]<br>
+<img src="https://assets.leetcode.com/uploads/2020/06/17/ants2.jpg" >
+<strong> Output: </strong>7<br>
+<strong>Explanation:</strong> All ants are going to the right, the ant at index 0 needs 7 seconds to fall.<br>
+<Strong>Solution Link:  <a href="https://github.com/BVARUNTEJA/LeetCode-POD/blob/November-2023/04-11-2023.py">Click Here</a></Strong>
  <br>
 
 
