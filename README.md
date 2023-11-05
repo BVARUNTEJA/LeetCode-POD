@@ -131,7 +131,7 @@ Given an integer n and two integer arrays left and right, the positions of the a
 <br>
 <strong>Constraints:</strong>
 <ul>
-  <li>1 <= n <= 10<sub>4</sub></li>
+  <li>1 <= n <= 10<sup>4</sup></li>
   <li>0 <= left.length <= n + 1</li>
   <li>0 <= left[i] <= n</li>
   <li>0 <= right.length <= n + 1</li>
@@ -160,4 +160,34 @@ The last moment when an ant was on the plank is t = 4 seconds. After that, it fa
 <Strong>Solution Link:  <a href="https://github.com/BVARUNTEJA/LeetCode-POD/blob/November-2023/04-11-2023.py">Click Here</a></Strong>
  <br>
 
-
+<h2>DAY_5</h2>
+<p>Problem Discription-<a href="https://leetcode.com/problems/find-the-winner-of-an-array-game/description/">Link</a></p>
+<div>
+<p>
+<strong>1535</strong>Find the Winner of an Array Game.
+Given an integer array arr of distinct integers and an integer k.
+   A game will be played between the first two elements of the array (i.e. arr[0] and arr[1]). In each round of the game, we compare arr[0] with arr[1], the larger integer wins and remains at position 0, and the smaller integer moves to the end of the array. The game ends when an integer wins k consecutive rounds.
+Return the integer which will win the game.
+It is guaranteed that there will be a winner of the game.
+<br>
+<strong>Constraints:</strong>
+<ul>
+  <li>2 <= arr.length <= 10<sup>5</sup></li>
+  <li>1 <= arr[i] <= 10<sup>6</sup></li>
+  <li>0 <= left[i] <= n</li>
+  <li>arr contains distinct integers.</li>
+  <li>1 <= k <= 10<sup>9</sup></li>
+</ul>
+</p>
+</div>
+ <strong>Example 1:</strong> 
+<strong>Input:</strong> arr = [2,1,3,5,4,6,7], k = 2<br>
+<strong>Output:</strong> 5<br>
+<strong>Explanation:</strong><br>
+Round |       arr       | winner | win_count <br>
+  1   | [2,1,3,5,4,6,7] | 2      | 1 <br>
+  2   | [2,3,5,4,6,7,1] | 3      | 1 <br>
+  3   | [3,5,4,6,7,1,2] | 5      | 1 <br>
+  4   | [5,4,6,7,1,2,3] | 5      | 2 <br>
+So we can see that 4 rounds will be played and 5 is the winner because it wins 2 consecutive games.<br>
+<Strong>Solution Link:  <a href="https://github.com/BVARUNTEJA/LeetCode-POD/blob/November-2023/05-11-2023.py">Click Here</a></Strong>
