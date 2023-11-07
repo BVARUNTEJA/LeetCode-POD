@@ -190,4 +190,75 @@ Round |       arr       | winner | win_count <br>
   3   | [3,5,4,6,7,1,2] | 5      | 1 <br>
   4   | [5,4,6,7,1,2,3] | 5      | 2 <br>
 So we can see that 4 rounds will be played and 5 is the winner because it wins 2 consecutive games.<br>
-<Strong>Solution Link:  <a href="https://github.com/BVARUNTEJA/LeetCode-POD/blob/November-2023/05-11-2023.py">Click Here</a></Strong>
+<Strong>Solution Link:  <a href="https://github.com/BVARUNTEJA/LeetCode-POD/blob/November-2023/05-11-2023.py">Click Here</a></Strong><br>
+
+<h2>DAY_6</h2>
+<p>Problem Discription-<a href="https://leetcode.com/problems/seat-reservation-manager/description/?envType=daily-question&envId=2023-11-06">Link</a></p>
+<strong>1845.</strong>Seat Reservation Manager.
+<div>
+ <p>Design a system that manages the reservation state of n seats that are numbered from 1 to n.</p>
+ <p>Implement the SeatManager class:</p>
+ <ul>
+  <li>SeatManager(int n) Initializes a SeatManager object that will manage n seats numbered from 1 to n. All seats are initially available.</li>
+  <li>int reserve() Fetches the smallest-numbered unreserved seat, reserves it, and returns its number.</li>
+  <li>void unreserve(int seatNumber) Unreserves the seat with the given seatNumber.</li>
+ </ul>
+ <br>
+<strong>Constraints:</strong>
+ <ul>
+  <li>1 <= n <= 10<sup>5</sup></li>
+   <li>1 <= seatNumber <= n</li>
+    <li>For each call to reserve, it is guaranteed that there will be at least one unreserved seat.
+</li>
+    <li>For each call to unreserve, it is guaranteed that seatNumber will be reserved.</li>
+    <li>At most 10 <sup>5</sup> calls in total will be made to reserve and unreserve.</li>
+ </ul>
+</div>
+ <strong>Example 1:</strong> 
+<strong>Input:</strong> ["SeatManager", "reserve", "reserve", "unreserve", "reserve", "reserve", "reserve", "reserve", "unreserve"]
+[[5], [], [], [2], [], [], [], [], [5]]<br>
+<strong>Output:</strong> [null, 1, 2, null, 2, 3, 4, 5, null]<br>
+<strong>Explanation:</strong><br>
+SeatManager seatManager = new SeatManager(5); // Initializes a SeatManager with 5 seats.<br>
+seatManager.reserve();    // All seats are available, so return the lowest numbered seat, which is 1.<br>
+seatManager.reserve();    // The available seats are [2,3,4,5], so return the lowest of them, which is 2.<br>
+seatManager.unreserve(2); // Unreserve seat 2, so now the available seats are [2,3,4,5].<br>
+seatManager.reserve();    // The available seats are [2,3,4,5], so return the lowest of them, which is 2.<br>
+seatManager.reserve();    // The available seats are [3,4,5], so return the lowest of them, which is 3.<br>
+seatManager.reserve();    // The available seats are [4,5], so return the lowest of them, which is 4.<br>
+seatManager.reserve();    // The only available seat is seat 5, so return 5.<br>
+seatManager.unreserve(5); // Unreserve seat 5, so now the available seats are [5].<br>
+<Strong>Solution Link:  <a href="https://github.com/BVARUNTEJA/LeetCode-POD/commit/ce640610d0205c14fbd84e02fa4588d7be803875">Click Here</a></Strong><br>
+
+<h2>DAY_7</h2>
+<p>Problem Discription-<a href="https://leetcode.com/problems/eliminate-maximum-number-of-monsters/description/">Link</a></p>
+<strong>1921.</strong>Eliminate Maximum Number of Monsters.
+<div>
+ <p>You are playing a video game where you are defending your city from a group of n monsters. You are given a 0-indexed integer array dist of size n, where dist[i] is the initial distance in kilometers of the ith monster from the city.</p>
+ <p>The monsters walk toward the city at a constant speed. The speed of each monster is given to you in an integer array speed of size n, where speed[i] is the speed of the ith monster in kilometers per minute.</p>
+ <p>You have a weapon that, once fully charged, can eliminate a single monster. However, the weapon takes one minute to charge. The weapon is fully charged at the very start.</p>
+ <p>You lose when any monster reaches your city. If a monster reaches the city at the exact moment the weapon is fully charged, it counts as a loss, and the game ends before you can use your weapon</p>
+ <p>Return the maximum number of monsters that you can eliminate before you lose, or n if you can eliminate all the monsters before they reach the city.</p>
+ <strong>Constraints:</strong>
+ <ul>
+  <li> n == dist.length == speed.length</li>
+  <li>1 <= n <= 10 <sup>5</sup> </li>
+   <li>1 <= dist[i], speed[i] <= 10 <sup>5</sup> </li>
+ </ul>
+</div>
+<strong>Example 1:</strong><br>
+<strong>Input:</strong>dist = [1,3,4], speed = [1,1,1]<br>
+<strong>Output:</strong> 3<br>
+<strong>Explanation:</strong><br>
+In the beginning, the distances of the monsters are [1,3,4]. You eliminate the first monster.<br>
+After a minute, the distances of the monsters are [X,2,3]. You eliminate the second monster.<br>
+After a minute, the distances of the monsters are [X,X,2]. You eliminate the thrid monster.<br>
+All 3 monsters can be eliminated.<br>
+<strong>Example 2:</strong><br>
+<strong>Input:</strong>dist = [1,1,2,3], speed = [1,1,1,1]<br>
+<strong>Output:</strong> 1<br>
+<strong>Explanation:</strong><br>
+In the beginning, the distances of the monsters are [1,1,2,3]. You eliminate the first monster.<br>
+After a minute, the distances of the monsters are [X,0,1,2], so you lose.<br>
+You can only eliminate 1 monster.<br>
+<Strong>Solution Link:  <a href="https://github.com/BVARUNTEJA/LeetCode-POD/commit/fb748bd710bf49c20c826d969a07a05901051a0f">Click Here</a></Strong><br>
