@@ -262,3 +262,33 @@ In the beginning, the distances of the monsters are [1,1,2,3]. You eliminate the
 After a minute, the distances of the monsters are [X,0,1,2], so you lose.<br>
 You can only eliminate 1 monster.<br>
 <Strong>Solution Link:  <a href="https://github.com/BVARUNTEJA/LeetCode-POD/commit/fb748bd710bf49c20c826d969a07a05901051a0f">Click Here</a></Strong><br>
+
+<h2>DAY_8</h2>
+<p>Problem Discription-<a href="https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/description/">Link</a></p>
+<strong>2849.</strong>Determine if a Cell Is Reachable at a Given Time.
+<div><p>You are given four integers sx, sy, fx, fy, and a non-negative integer t.</p>
+ <p>In an infinite 2D grid, you start at the cell (sx, sy). Each second, you must move to any of its adjacent cells.</p>
+<p>Return true if you can reach cell (fx, fy) after exactly t seconds, or false otherwise.</p>
+<p>A cell's adjacent cells are the 8 cells around it that share at least one corner with it. You can visit the same cell several times.</p>
+
+ <strong>Constraints:</strong>
+ <ul>
+  <li> 1 <= sx, sy, fx, fy <= 10<sup>9</sup></li>
+  <li>0 <= t <= 10<sup>9</sup> </li>
+  </ul>
+</div>
+<strong>Example 1:</strong><br>
+<strong>Input:</strong>sx = 2, sy = 4, fx = 7, fy = 7, t = 6<br>
+<strong>Output:</strong> True<br>
+ <img src="https://assets.leetcode.com/uploads/2023/08/05/example2.svg" >
+<strong>Explanation:</strong><br>
+Starting at cell (2, 4), we can reach cell (7, 7) in exactly 6 seconds by going through the cells depicted in the picture above. 
+After a minute, the distances of the monsters are [X,X,2]. You eliminate the thrid monster.<br>
+<strong>Example 2:</strong><br>
+<strong>Input:</strong>sx = 3, sy = 1, fx = 7, fy = 3, t = 3<br>
+<strong>Output:</strong> False<br>
+<img src="https://assets.leetcode.com/uploads/2023/08/05/example1.svg" >
+<strong>Explanation:</strong><br>
+ <p>Starting at cell (3, 1), it takes at least 4 seconds to reach cell (7, 3) by going through the cells depicted in the picture above. Hence, we cannot reach cell (7, 3) at the third second.</p>
+<br>
+<Strong>Solution Link:  <a href="https://github.com/BVARUNTEJA/LeetCode-POD/blob/November-2023/08-11-2023.py">Click Here</a></Strong><br>
